@@ -1,0 +1,26 @@
+git pull (with merge):
+
+git pull fetches changes from the remote repository and merges them into the local branch.
+This creates a new merge commit, preserving the commit history of both the local and remote branches.
+$ git pull origin <branch-name>
+Before:
+A -- B -- C (local)
+     \
+      D -- E -- F (remote)
+After:
+A -- B -- C -- M (merge commit)
+               /
+      D -- E -- F (remote)
+
+git pull --rebase:
+
+git pull --rebase fetches changes from the remote repository and rebases the local branch on top of the fetched changes.
+This creates a linear commit history without additional merge commits.
+git pull origin <branch-name> --rebase
+Before:
+A -- B -- C (local)
+     \
+      D -- E -- F (remote)
+After:
+A -- B -- C -- D' -- E' -- F' (rebased)
+In this case, commits D, E, and F are applied on top of C, resulting in new commits D', E', and F'. The original commits D, E, and F are preserved in the remote branch.
