@@ -1,0 +1,8 @@
+git pull: It fetches changes from a remote repository and merges them into the current branch, 
+creating a merge commit.
+
+# git pull origin <branch-name>
+
+git merge: 
+It merges changes from one branch into another. It is typically used after fetching changes using git fetch.
+ git merge branch
