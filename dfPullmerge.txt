@@ -1,9 +1,0 @@
-git pull: It fetches changes from a remote repository and merges them into the current branch, 
-creating a merge commit.
-
-# git pull origin <branch-name>
-
-git pull --rebase: It fetches changes from a remote repository and rebases the current branch on top 
-of the fetched changes, creating a linear history without merge commits.
-
-# git pull origin <branch-name> --rebase
