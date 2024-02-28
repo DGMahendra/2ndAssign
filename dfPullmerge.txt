@@ -3,7 +3,6 @@ creating a merge commit.
 
 # git pull origin <branch-name>
 
-git pull --rebase: It fetches changes from a remote repository and rebases the current branch on top 
-of the fetched changes, creating a linear history without merge commits.
-
-# git pull origin <branch-name> --rebase
+git merge: 
+It merges changes from one branch into another. It is typically used after fetching changes using git fetch.
+ git merge branch
